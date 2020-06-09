@@ -1,0 +1,352 @@
+html {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 11pt;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+    box-sizing: border-box;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+nav a {
+    padding-top: 1.75em;
+    padding-bottom: .5em;
+}
+
+nav > a:hover {
+    color: cyan;
+}
+
+nav > div {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .25em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#clinicinfo > div {
+    font-size: .75em;
+    margin-left: 10em;
+}
+
+#clinicinfo i {
+    margin-right: .5em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    line-height: 3.8em;
+    padding-top: 3.75em;
+    margin: auto;
+}
+
+.title  h1 {
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: rgba( 0, 0, 0, 0.7);
+}
+
+.title  h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    color: rgba( 0, 0, 0, 0.7);
+    text-transform: uppercase;
+}
+
+.title > i {
+    float: left;
+    color: rgba( 0, 0, 0, 0.7);
+    font-size: 6.75em;
+    padding-right: .25em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba( 0, 0, 0, 0.7);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.subtitle {
+    font-size: 5em;
+    color: rgba( 0, 0, 0, 0.7);
+    font-weight: bold;
+    margin-bottom: .5em;
+    font-family: "Londrina Sketch", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#building {
+    box-shadow: 5px 10px 8px #888888;
+    width: 40vw;
+    z-index: 3;
+}
+
+blockquote {
+    color: rgba( 0, 0, 0, 0.7);;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+article:before {
+    background-image: url("../images/Dog-and-Cat.jpg");
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+article {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#dog-ekg, #cat-ekg {
+    width: 25vw;
+    margin-top: -2em;
+}
+
+#fighting-cat {
+    width: 1.5em;
+}
+
+#tabs {
+    white-space: nowrap;
+    display: flex;
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+
+#tabs > a {
+    background-color: rgba(224, 224, 224, .8);
+    width: 14ch;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: 2px 0px rgba(0, 0, 0, .5);
+}
+
+#tabs > a:hover {
+    background-color: rgba(0, 255, 255, .3);
+}
+
+.tabcontent {
+    display: none;
+}
+
+div.show-tab {
+    display: grid !important;
+}
+
+a.show-tab {
+    background-color: rgba(255, 255, 255, .8) !important;
+}
+
+#doctors, #staff {
+    background-color: rgba(255, 255, 255, .8);
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    overflow: hidden;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin-bottom: .25em;
+}
+
+#doctors > #barb {
+    grid-column: 1 / span 2;
+}
+
+#doctors li {
+    list-style-type: circle;
+}
+
+.bio-box {
+    text-align: left;
+    padding-bottom: 2em;
+    padding-left: 3ch;
+}
+
+.bio-box > img {
+    float: left;
+    padding-right: 3ch;
+    width: 12vw;
+}
+
+.bio-box > p {
+    margin-right: 3ch;
+}
+
+span {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#story {
+    background-color: rgba(255, 255, 255, .8);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding: .75em;
+}
+
+#intro {
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+#rabbit {
+    width: 1.25em;
+}
+
+#services div:nth-child(2) {
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 1.25em;
+    padding: .75em;
+    border-radius: 1em;
+    margin: auto;
+    position: relative;
+}
+
+#clinicservices {
+    width: 30ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: -1em;
+}
+
+#services li {
+    list-style-type: none;
+
+}
+
+#services i {
+    padding-right: .75ch;
+    font-size: .75em;
+    color: rgba( 0, 0, 0, 0.7);
+}
+
+#dog-group {
+    width: 20vw;
+}
+
+#contact div:nth-child(2) {
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 1.25em;
+    padding: .75em;
+    border-radius: 1em;
+    margin: auto;
+    position: relative;
+}
+
+#contact-links {
+    display: flex;
+    flex-direction: column;
+    width: calc(2em + 10ch);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 2em;
+}
+
+#contact-links i {
+    margin-right: .5em;
+    color: rgba( 0, 0, 0, 0.7);
+}
+
+#contact-links a {
+    color: rgba( 0, 0, 0, 0.7);
+}
+
+#contact-links a i {
+    transition: transform .25s;
+}
+
+#contact a:hover {
+    text-shadow: 2px 2px 8px rgba( 0, 0, 0, 0.5);
+    blur-radius: .5em;
+}
+
+#contact-links div {
+    color: red;
+    font-size: .5em;
+    overflow: visible;
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#contact-links iframe {
+    width: 35vw;
+    align-self: center;
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+#rat {
+    width: 2.5em;
+    padding-top: .2em;
+    margin-left: -1em;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+#bonus {
+    display: none;
+}
